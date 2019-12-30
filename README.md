@@ -21,5 +21,7 @@ Frequency and Power factor of the supply is measured with the help schmitt trigg
 Schmitt trigger converts the sine wave into square wave and measuring the ON and OFF time in square wave gives us Frequncy. The ON and OFF time of the square wave is measured with pulseIn command of in ArduinoIDE.
 Similarly, for measurement of power factor XoR gate is used which calculates difference of on and off in current and voltage waveforms. Calculating that time helps us measuring power factor with formula as cos(phi)=360*f*dt.
 
+These parameters are measured with help of arduino and are serially transferred to NodeMCU(ESP8266). Then these parameters are sent to ThingSpeak server with the help of NodeMCU WiFi connectivity.
+
 Relays and Circuit breakers are controlled with BLYNK and NodeMCU(ESP8266) with IoT.
 
